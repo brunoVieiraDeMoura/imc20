@@ -1,0 +1,98 @@
+.menu-bg{
+  background:var(--cor-0);
+  position:fixed;
+  width: 100%;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  z-index: 32;
+
+}
+.menu{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+  
+}
+
+.menu li a{
+  color:var(--cor-12);
+  /* position: relative; */
+}
+
+.menu li a:hover{
+  color:var(--cor-7);
+}
+
+.menu a{
+  color:var(--cor-12);
+}
+
+
+.cor-20{
+  color: var(--cor-7);
+}
+.menu-logo{
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin: 0 30px;
+  font-family: "Kings";
+}
+
+.menu-nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 10px;
+}
+
+.menu-nav a {
+font-size: 1.25rem;
+display: block;
+padding: 0px 20px;
+font-weight: bold;
+}
+
+.menu-nav li{
+position: relative;
+
+}
+
+.menu li a:after{
+  content: '';
+  display: block;
+  height: 2px;
+  width: 0px;
+  background:var(--cor-12);
+  margin-top: 4px;
+  transition: 0.3s;
+  position: absolute;
+}
+
+.menu li a:hover:after{
+  width: 75%;
+}
+
+.menu-nav li a:nth-child(){
+  background:var(--cor-1);
+}
+
+
+
+@media (max-width:850px){
+ .menu-bg{
+  position:initial;
+ } 
+}
+
+@media (max-width:650px){
+
+.menu-logo{
+ font-size: 2rem;
+}
+
+.menu-nav a {
+font-size: 1.15rem;
+line-height: 2.5;
+}
+}

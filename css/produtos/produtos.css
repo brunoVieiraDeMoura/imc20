@@ -1,0 +1,148 @@
+.h1prod{
+  font-size: 3rem;
+  margin: 60px 30px 60px 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+  max-width: 1200px;
+  padding: 0px 30px;
+  color: var(--cor-11);
+}
+
+
+.produtos{
+  margin: 60px auto;
+}
+
+.produtos-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.produtos-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-wrap: wrap;
+  flex: 1 1 180px;
+  margin: 10px 40px;
+
+}
+
+.produtos-item img{
+  border-radius: 0px 0px 0px 20px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  align-self: center;
+}
+
+.produtos-item h2 {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 3rem;
+  background:var(--cor-0);
+  padding: 60px 20px;
+}
+.c-verde{
+  color: var(--cor-12);
+}
+.produtos-item  .c-verde::after{
+  display: block;
+  content: 'Veja os benefícios';
+  font-size: 1rem;
+}
+.c-azul{
+  color: var(--cor-6);
+}
+.produtos-item  .c-azul::after{
+  display: block;
+  content: 'Visite o site';
+  font-size: 1rem;
+}
+.c-rosa{
+  color: var(--cor-4);
+}
+.produtos-item .c-rosa::after{
+  display: block;
+  content: 'Visite o site';
+  font-size: 1rem;
+}
+
+.verde {
+  border-top: 8px dotted  var(--cor-7);
+  padding: 0px;
+}
+
+.rosa {
+  border-top: 8px dotted  var(--cor-3);
+  padding: 0px;
+
+}
+
+.azul {
+  border-top: 8px dotted  var(--cor-5);
+  padding: 0px;
+
+}
+
+.c-verde:hover{
+  display: block;
+  color: var(--cor-7) ;
+}
+.c-azul:hover{
+  color: var(--cor-5) ;
+}
+.c-rosa:hover{
+  color: var(--cor-3) ;
+}
+
+
+
+
+@media (max-width:850px){
+  .produtos-item{
+    max-width: 400px;
+    flex: 1 1 300px;
+    margin: 10px 30px;
+  }
+.produtos-container{
+justify-content: center;
+}
+}
+
+@media (max-width:650px){
+  .h1prod {
+    text-align: center;
+  }
+  .produtos-item img{
+    max-width: 100%;
+    max-height: 400px;
+  }
+  .produtos-item h2 {
+  font-size: 2rem;
+  gap: 10px;
+padding: 20px;
+  }
+  .produtos-item  {
+    max-width: 400px;
+}
+.verde {
+
+  padding: 20px 0px 0px 0px;
+}
+
+.rosa {
+
+  padding: 20px 0px 0px 0px;
+
+
+}
+
+.azul {
+
+  padding: 20px 0px 0px 0px;
+
+
+}
+}

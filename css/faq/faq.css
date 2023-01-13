@@ -1,0 +1,107 @@
+.faq-bg{
+  padding-bottom: 100px;
+}
+
+.js-accordion dd{
+  display: none;
+}
+
+.js-accordion dt::after{
+  content: '⮷';
+margin-left: 12px;
+
+}
+.js-accordion dt{
+  cursor: pointer;
+}
+
+.js-accordion dt:hover{
+  color: var(--cor-12);
+}
+
+.js-accordion dt.ativo::after{
+  content: '⮵';
+}
+
+.js-accordion dt::before{
+content: '';
+display: inline-block;
+width: 10px;
+height: 10px;
+margin-right: 10px;
+background: var(--cor-12);
+margin-bottom: 2px;
+border-radius: 50% ;
+}
+
+  .js-accordion dd.ativo{
+  display: block;
+  animation: slideDown 2s forwards ;
+  text-align: center;
+  max-width: 75ch;
+  }
+
+
+  .faq-h1{
+    margin: 60px 30px 60px 30px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    font-size: 3rem;
+    padding: 0px 30px;
+    color: var(--cor-11) ;
+    text-align: center;
+
+  }
+.faq span{
+  font-family: "Kings";
+}
+.faq sup{
+  color: var(--cor-7);
+}
+.faq dl{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--cor-7);
+    gap: 20px;  
+  }
+  .faq dd{
+    font-size: 1.2rem;
+    color: var(--cor-12);
+  }
+
+  .faq{
+    margin-top: 60px;
+
+  }
+
+@keyframes slideDown {
+  from{
+    opacity: 0;
+    max-height: 0;
+  }
+  to{
+    max-height: 600px ;
+    opacity: 1;
+  }
+}
+
+@media (max-width:800px){
+  .faq dl {
+    justify-content: start;
+    align-items: flex-start;
+  }
+  .faq dd
+  {
+    align-self: s;
+    margin-left: 0px;
+    text-align: start;
+  }
+  .faq{
+    margin-left: 30px;
+  }
+
+}

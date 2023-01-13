@@ -1,0 +1,25 @@
+body, h1, h2, p ,ul ,li, a {
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  font-family: "Nunito", Arial, Helvetica, sans-serif;
+}
+
+ul,dl,dd{
+  list-style: none;
+}
+
+a,dl,dd{
+  text-decoration: none;
+}
+
+img{
+  max-width: 100%;
+  display: block;
+}
+
+*{
+  box-sizing: border-box;
+}

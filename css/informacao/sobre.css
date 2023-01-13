@@ -1,0 +1,118 @@
+.sobre{
+  border-top: 2px solid var(--cor-1);
+  border-bottom: 2px solid var(--cor-1);
+  padding: 60px 0px;
+  /* display: flex;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: flex-start;
+}
+
+.sobre-info{
+margin: 0px 30px;
+}
+
+.sobre-info h1{
+font-size: 3rem;
+margin-bottom: .5em;
+color: var(--cor-11);
+}
+
+.sobre-info p{
+  font-size: 1.25rem;
+line-height: 1.4;
+margin-bottom: 1rem;
+color: var(--cor-12);
+  }
+
+.sobre-img{
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+  align-self: center;
+  margin: 0px 30px;
+  
+}
+
+
+.borda-somb{
+  margin-bottom: 10px;
+  margin-top: 10px;
+
+  content: '';
+  display: block;
+  border-radius: 2px;
+  border-top: 4px solid var(--cor-2);
+  /* box-shadow: 0 10px var(--cor-1), 0 -10px var(--cor-1); */
+  
+}
+.sobre-img iframe{
+  border-radius: 20px;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+
+}
+.sobre-info a{
+  text-decoration: underline;
+  color: var(--cor-7);
+}
+
+
+.sobre-img a{
+margin-top: 40px;
+  border: 4px solid;
+  align-self: center;
+  color: var(--cor-11);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 12px 62px;
+  text-align: center;
+  border-radius: 10px;
+  background: linear-gradient(90deg, var(--cor-7) 0%, var(--cor-12) 100%);
+  color: var(--cor-0);
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+  
+}
+
+.sobre-img a:hover{
+  background: linear-gradient(90deg, var(--cor-7) 0%, var(--cor-8) 100%);
+  color: var(--cor-1);
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width:850px){
+  .sobre{
+  grid-template-columns: 1fr;
+  }
+  .sobre-img{
+   grid-row: 2;
+  }
+  .sobre-img iframe{
+    width: 100%;
+  }
+
+  .sobre-img a{
+  border: 2px solid;
+  margin-top: 20px;
+    font-size: 1.25rem;
+    padding: 14px 32px;
+
+  }
+  
+
+}
+@media (max-width:650px){
+.sobre h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.sobre p {
+  text-align: center;
+  font-size: 1.125rem;
+}
+.sobre p:last-child {
+display: none;
+}
+}

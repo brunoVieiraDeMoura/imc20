@@ -1,0 +1,17 @@
+@import './global/global.css';
+@import './global/container.css';
+@import './ultilidades/botoes.css';
+@import './ultilidades/cor-yoga.css';
+@import './ultilidades/tipografia.css';
+@import './header/header.css';
+@import './informacao/info.css';
+@import './informacao/sobre.css';
+@import './produtos/produtos.css';
+@import './venda/pacotes.css';
+@import './qualidade/qualidade.css';
+@import './footer/footer.css';
+@import './faq/faq.css';
+@import './newsletter/news.css';
+@import './slides/my-slider.css';
+@import './venda/vendas.css';
+@import './header/menu-mobile.css';

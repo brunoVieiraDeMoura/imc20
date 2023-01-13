@@ -1,0 +1,88 @@
+.news{
+  background: var(--cor-0);
+  padding: 60px calc((100% - 1200px)/2);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.news-info{
+  flex: 1 1 260px;
+  margin: 0px 30px;
+}
+
+.news-info h1{
+  font-size: 3rem;
+  color: var(--cor-11);
+}
+
+.news-info p{
+  font-size: 1.25rem;
+  font-style: italic;
+  max-width: 380px;
+  color: var(--cor-12);
+  margin-bottom: 10px;
+
+}
+
+.news-form{
+  flex: 2 1 260px;
+  margin: 0px 10px;
+  align-self: center;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.news-form textarea{
+  flex: 3 1 600px;
+  height: 80px;
+  font-size: 1.25rem;
+  font-style: italic;
+  font-family: "Nunito", Arial, Helvetica, sans-serif;
+  border: 4px solid var(--cor-11);
+  background: transparent;
+  padding: 10px;
+  margin: 0px;
+  border-radius: 0px 0px 0px 0px;
+}
+
+.news-form input{
+  flex: 3 1 200px;
+  font-size: 1.25rem;
+  font-style: italic;
+  font-family: "Nunito", Arial, Helvetica, sans-serif;
+  border: 4px solid var(--cor-11);
+  background: transparent;
+  padding: 10px;
+  margin: 0px;
+  border-radius: 0px 0px 0px 0px;
+}
+
+.news-form button{
+  flex: 2 1 200px;
+  font-family: "Nunito", Arial, Helvetica, sans-serif;
+  font-size: 2.25rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  background:var(--cor-11) ;
+  border-color: transparent;
+  color: var(--cor-0);
+  margin: 0px;
+  cursor: pointer;
+  border: 0px;
+  padding: 10px 10px;
+border-radius: 0px 0px 0px 10px;
+/* transition: 1s;  */
+}
+
+.news-form button:hover{
+  background: var(--cor-7);
+}
+
+@media (max-width:650px){
+.news h1{
+  text-align: center;
+}
+.news {
+  display: none;
+}
+}
